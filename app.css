@@ -1,0 +1,18 @@
+form#user{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+    margin-left: 47%;
+    
+}
+
+div{
+    position: absolute;
+    display: flex;
+    margin-top: 10%;
+    margin-left: 27%;
+    color: red;
+    font-size: 500%;
+    font-family: monospace;
+}
