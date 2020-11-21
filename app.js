@@ -41,22 +41,22 @@ function onStart(){
     title.remove()
 }
 
-// fetch(userURL)
-//     .then (response => response.json())
-//     .then (users => renderUsers(users))
+fetch(userURL)
+    .then (response => response.json())
+    .then (users => renderUsers(users))
 
-// function renderUsers(users){
-//     const div = document.createElement('div')
-//     body.append(div)
-//     users.map(user => {
-//         const li = document.createElement('li') 
+function renderUsers(users){
+    const div = document.createElement('div')
+    body.append(div)
+    users.map(user => {
+        const li = document.createElement('li') 
 
-//         li.textContent = `${user.username} :${users.score}`
+        li.textContent = `${user.username} :${users.score}`
 
         
-//         div.append(li)
-//     })
-// }
+        div.append(li)
+    })
+}
 
 
 
