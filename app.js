@@ -31,15 +31,14 @@ function saveNewUser(user){
     onStart()
 }
 
-// function onStart(){ 
-//     newScript = document.createElement('script')
-    
-//     newScript.src = 'game.js'
+function onStart(){ 
+    newScript = document.createElement('script')
+    newScript.src = 'game.js'
 
-//     head.append(newScript)
-//     userForm.remove()
-//     title.remove()
-// }
+    head.append(newScript)
+    userForm.remove()
+    title.remove()
+}
 
 fetch(userURL)
     .then (response => response.json())
