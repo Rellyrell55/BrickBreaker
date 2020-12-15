@@ -12,12 +12,12 @@ userForm.addEventListener('submit', (event) => {
     handleForm(userForm)
 })
 
-function handleForm(userForm){
-    const newUserData = new FormData(userForm)
-    const newUser = newUserData.get('username')
+// function handleForm(userForm){
+//     const newUserData = new FormData(userForm)
+//     const newUser = newUserData.get('username')
     
-    saveNewUser(newUser)
-}
+//     saveNewUser(newUser)
+// }
 
 function saveNewUser(user){
     fetch(userURL, {
